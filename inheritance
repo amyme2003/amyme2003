@@ -1,0 +1,29 @@
+class calculation{
+    int z;
+    
+    public void addition(int x,int y)
+    {
+        z=x+y;
+        System.out.println("sum is"+z);
+    }
+    public void subtraction(int x,int y)
+    {
+        z=x-y;
+        System.out.println("sub is"+z);
+    }
+}
+class calc_demo extends calculation{
+    public void multiplication(int x,int y){
+        z=x*y;
+        System.out.println("product is"+z);
+    }
+}
+public class inheritance{
+    public static void main(String args[]){
+    int a=20,b=20;
+      calc_demo c=new calc_demo() ;
+      c.addition(a,b);
+      c.subtraction(a,b);
+      c.multiplication(a,b);
+    }
+}
